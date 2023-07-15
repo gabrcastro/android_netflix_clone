@@ -18,7 +18,8 @@
             android:scaleType="centerCrop"
             android:src="@drawable/shadows"
             app:layout_constraintDimensionRatio="16:9"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/movie_img_description" />
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/movie_toolbar"
@@ -34,7 +35,8 @@
             app:layout_constraintBottom_toBottomOf="@id/movie_img"
             app:layout_constraintEnd_toEndOf="@id/movie_img"
             app:layout_constraintStart_toStartOf="@+id/movie_img"
-            app:layout_constraintTop_toTopOf="@+id/movie_img" />
+            app:layout_constraintTop_toTopOf="@+id/movie_img"
+            android:contentDescription="@string/play_icon_description" />
 
         <TextView
             android:id="@+id/movie_txt_title"
@@ -92,6 +94,15 @@
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/movie_txt_cast" />
+
+        <ProgressBar
+            android:id="@+id/movie_progress"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/movie_rv_similar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/movie_rv_similar"
