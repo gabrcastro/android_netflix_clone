@@ -2,4 +2,6 @@
     <string name="app_name">NetflixClone</string>
     <string name="cast">Elenco: %1$s</string>
     <string name="similar">Opcoes semelhantes</string>
+    <string name="movie_img_description">Movie Image</string>
+    <string name="play_icon_description">Play Icon</string>
 </resources>
