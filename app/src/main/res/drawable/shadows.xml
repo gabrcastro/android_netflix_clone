@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/cover_drawable" android:drawable="@drawable/movie_4"></item>
+    <item android:id="@+id/gradient_drawable">
+        <shape>
+            <gradient
+                android:angle="90"
+                android:endColor="#ef000000"
+                android:startColor="#ef000000"
+                android:centerColor="#00000000"/>
+        </shape>
+    </item>
+
+</layer-list>
